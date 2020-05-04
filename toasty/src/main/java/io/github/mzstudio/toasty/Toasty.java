@@ -1,5 +1,6 @@
 package io.github.mzstudio.toasty;
 
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Typeface;
@@ -98,14 +99,14 @@ public class Toasty {
     public static Toast normal(@NonNull Context context, @StringRes int message, int duration,
                                Drawable icon, boolean withIcon) {
         return custom(context, context.getString(message), icon, ToastyUtils.getColor(context, R.color.normalColor),
-                ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast normal(@NonNull Context context, @NonNull CharSequence message, int duration,
                                Drawable icon, boolean withIcon) {
         return custom(context, message, icon, ToastyUtils.getColor(context, R.color.normalColor),
-                ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, true);
     }
 
     @CheckResult
@@ -131,15 +132,15 @@ public class Toasty {
     @CheckResult
     public static Toast warning(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
         return custom(context, context.getString(message), ToastyUtils.getDrawable(context, R.drawable.ic_error_outline_white_24dp),
-                ToastyUtils.getColor(context, R.color.warningColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.warningColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast warning(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
         return custom(context, message, ToastyUtils.getDrawable(context, R.drawable.ic_error_outline_white_24dp),
-                ToastyUtils.getColor(context, R.color.warningColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.warningColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
@@ -165,15 +166,15 @@ public class Toasty {
     @CheckResult
     public static Toast info(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
         return custom(context, context.getString(message), ToastyUtils.getDrawable(context, R.drawable.ic_info_outline_white_24dp),
-                ToastyUtils.getColor(context, R.color.infoColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.infoColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast info(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
         return custom(context, message, ToastyUtils.getDrawable(context, R.drawable.ic_info_outline_white_24dp),
-                ToastyUtils.getColor(context, R.color.infoColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.infoColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
@@ -199,15 +200,15 @@ public class Toasty {
     @CheckResult
     public static Toast success(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
         return custom(context, context.getString(message), ToastyUtils.getDrawable(context, R.drawable.ic_check_white_24dp),
-                ToastyUtils.getColor(context, R.color.successColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.successColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast success(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
         return custom(context, message, ToastyUtils.getDrawable(context, R.drawable.ic_check_white_24dp),
-                ToastyUtils.getColor(context, R.color.successColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.successColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
@@ -233,29 +234,29 @@ public class Toasty {
     @CheckResult
     public static Toast error(@NonNull Context context, @StringRes int message, int duration, boolean withIcon) {
         return custom(context, context.getString(message), ToastyUtils.getDrawable(context, R.drawable.ic_clear_white_24dp),
-                ToastyUtils.getColor(context, R.color.errorColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.errorColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast error(@NonNull Context context, @NonNull CharSequence message, int duration, boolean withIcon) {
         return custom(context, message, ToastyUtils.getDrawable(context, R.drawable.ic_clear_white_24dp),
-                ToastyUtils.getColor(context, R.color.errorColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, true);
+                      ToastyUtils.getColor(context, R.color.errorColor), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, true);
     }
 
     @CheckResult
     public static Toast custom(@NonNull Context context, @StringRes int message, Drawable icon,
                                int duration, boolean withIcon) {
         return custom(context, context.getString(message), icon, -1, ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, false);
+                      duration, withIcon, false);
     }
 
     @CheckResult
     public static Toast custom(@NonNull Context context, @NonNull CharSequence message, Drawable icon,
                                int duration, boolean withIcon) {
         return custom(context, message, icon, -1, ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, false);
+                      duration, withIcon, false);
     }
 
     @CheckResult
@@ -263,8 +264,8 @@ public class Toasty {
                                @ColorRes int tintColorRes, int duration,
                                boolean withIcon, boolean shouldTint) {
         return custom(context, context.getString(message), ToastyUtils.getDrawable(context, iconRes),
-                ToastyUtils.getColor(context, tintColorRes), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, shouldTint);
+                      ToastyUtils.getColor(context, tintColorRes), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, shouldTint);
     }
 
     @CheckResult
@@ -272,8 +273,8 @@ public class Toasty {
                                @ColorRes int tintColorRes, int duration,
                                boolean withIcon, boolean shouldTint) {
         return custom(context, message, ToastyUtils.getDrawable(context, iconRes),
-                ToastyUtils.getColor(context, tintColorRes), ToastyUtils.getColor(context, R.color.defaultTextColor),
-                duration, withIcon, shouldTint);
+                      ToastyUtils.getColor(context, tintColorRes), ToastyUtils.getColor(context, R.color.defaultTextColor),
+                      duration, withIcon, shouldTint);
     }
 
     @CheckResult
@@ -281,7 +282,7 @@ public class Toasty {
                                @ColorRes int tintColorRes, int duration,
                                boolean withIcon, boolean shouldTint) {
         return custom(context, context.getString(message), icon, ToastyUtils.getColor(context, tintColorRes),
-                ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, shouldTint);
+                      ToastyUtils.getColor(context, R.color.defaultTextColor), duration, withIcon, shouldTint);
     }
 
     @CheckResult
@@ -289,7 +290,7 @@ public class Toasty {
                                @ColorRes int tintColorRes, @ColorRes int textColorRes, int duration,
                                boolean withIcon, boolean shouldTint) {
         return custom(context, context.getString(message), icon, ToastyUtils.getColor(context, tintColorRes),
-                ToastyUtils.getColor(context, textColorRes), duration, withIcon, shouldTint);
+                      ToastyUtils.getColor(context, textColorRes), duration, withIcon, shouldTint);
     }
 
     @SuppressLint("ShowToast")
@@ -299,7 +300,7 @@ public class Toasty {
                                boolean withIcon, boolean shouldTint) {
         final Toast currentToast = Toast.makeText(context, "", duration);
         final View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
-                .inflate(R.layout.toast_layout, null);
+            .inflate(R.layout.toast_layout, null);
         final ImageView toastIcon = toastLayout.findViewById(R.id.toast_icon);
         final TextView toastTextView = toastLayout.findViewById(R.id.toast_text);
         Drawable drawableFrame;
