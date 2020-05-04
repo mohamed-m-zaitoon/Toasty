@@ -9,8 +9,8 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
-import androidx.v4.content.ContextCompat;
-import androidx.v7.content.res.AppCompatResources;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.content.res.AppCompatResources;
 import android.view.View;
 
 /**
